@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.placar{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+.score{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.score span{
+    font-size: 30px;
+}
+.user-choice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.choices{
+    margin: 20px;
+    width: 120px;
+    height: 120px;
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.selected{
+    border: solid red 2px
+}
+#middle-score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#game{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+}
+button{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+.btn{
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #B8BEEB;
+    border-radius: 7px;
+    transition: .5s;
+}
+.btn:hover{
+    background-color: transparent;
+    padding: 25px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+@media only screen and (max-width:1005px){
+    .placar{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 690px){
+    .score span{
+        font-size: 25px;
+    }
+}
+@media only screen and(max-width: 450px){
+    .score span{
+        font-size: 20px;
+    }
+}

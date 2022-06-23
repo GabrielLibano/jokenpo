@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpo</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+
+    <div class="main">
+
+        <div class="placar">
+            <div class="user-score score" id="user-score">
+                <h2>Seu Score:</h2>
+                <span class="placar-user">0</span>
+            </div>
+            <h2 id="middle-score"></h2>
+            <div class="computer-score score" id="placar-computer">
+                <h2>Computer Score:</h2>
+                <span class="placar-computer">0</span>
+            </div>
+        </div>
+
+        <div id="game">
+
+            <div class="user-choice">
+                <div class="paper choices" id="choices" onclick="jogada('p')">
+                    <img src="./images/papel.png" width="100px">
+                </div>
+                <div class="rock choices"  id="choices"onclick="jogada('r')">
+                    <img src="./images/pedra.png" width="100px">
+                </div>                
+                <div class="scissor choices"  id="choices" onclick="jogada('s')"> 
+                    <img src="./images/tesoura.png" width="100px">
+                </div>
+            </div>
+            <button id="btn" type="button" class="btn" onclick="restart()">Restart</button>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
